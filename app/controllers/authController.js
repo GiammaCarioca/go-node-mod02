@@ -46,5 +46,11 @@ module.exports = {
     return req.session.save(() => {
       res.redirect('app/dashboard')
     })
+  },
+
+  signout (req, res) {
+    return req.session.destroy(() => {
+      res.redirect('/')
+    })
   }
 }
