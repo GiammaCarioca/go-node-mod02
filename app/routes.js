@@ -46,6 +46,7 @@ routes.post(
   '/app/categories/:categoryId/snippets/create',
   snippetController.store
 )
+routes.put('/app/categories/:categoryId/snippets/:id', snippetController.update)
 
 routes.use((req, res) => res.render('errors/404'))
 
