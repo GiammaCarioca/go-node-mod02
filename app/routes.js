@@ -47,6 +47,10 @@ routes.post(
   snippetController.store
 )
 routes.put('/app/categories/:categoryId/snippets/:id', snippetController.update)
+routes.delete(
+  '/app/categories/:categoryId/snippets/:id',
+  snippetController.destroy
+)
 
 routes.use((req, res) => res.render('errors/404'))
 
