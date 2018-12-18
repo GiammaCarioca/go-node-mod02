@@ -3,5 +3,9 @@ module.exports = {
   host: '127.0.0.1',
   username: 'docker',
   password: 'docker',
-  database: 'snippetfy'
+  database: 'snippetfy',
+  operatorsAliases: false,
+  define: {
+    timestamps: true
+  }
 }
